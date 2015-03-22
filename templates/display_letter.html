@@ -1,0 +1,24 @@
+{% extends "template.html" %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/display_letter.css') }}">
+{% endblock %}
+{% block content %}
+  <div id="display_letter">
+    <div class="lead">
+    	<h2>To Juliet:</h2>
+    </div>
+    {%for letter in letters %}
+      <h3>{{letter.title}}</h3>
+      <p>{{letter.content}}</p>
+    {% endfor %}
+  </div>
+  <div id="display_letter">
+    <div class="lead">
+    	<h2>From Juliet:</h2>
+    </div>
+    {%for reply in replies %}
+      <h3>{{reply.title}}</h3>
+      <p>{{reply.reply_content}}</p>
+    {% endfor %}
+  </div>
+{% endblock %}

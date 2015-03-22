@@ -1,0 +1,26 @@
+<!doctype html>
+<html lan="en">
+<!--htmlWebpage Metadata -->
+	<head>
+	<meta charset= "utf-8">
+	<title>Juliet's Letters</title>
+	{% block head %}
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	{% endblock %}
+	<link href="http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/yeti/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<div>
+		<body>
+
+		{% block content %}
+		{% endblock %}
+		<!-- Site footer -->
+		<footer>
+		<h3>
+		  <p>2015 &copy; Jiaoling And Yiqi</p>
+		</h3>
+		</footer>
+
+		</body>
+	</div>
+</html>

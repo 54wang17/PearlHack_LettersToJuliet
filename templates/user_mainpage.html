@@ -1,0 +1,27 @@
+{% extends "template.html" %}
+{% block head %}
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/user_mainpage.css') }}">
+{% endblock %}
+
+{% block content %}
+<!-- Site header -->
+<header>
+	<h1>Your Letters</h1>
+</header>
+<a href="/logout/"><button id='logout' type='button' class="btn btn-link"> log out</button></a>
+<!-- Site article -->
+<article>
+	<div id = "line1">
+		<img  id="juliet" src="{{ url_for('static', filename='img/juliet.png') }}" width=400px height= 246px> 
+		<a href='/user/{{user_id}}/new_letter/' style="color:black;"><p id="d1"> Write Juliet A Letter</p></a>
+	</div>
+	<div id = "line2">
+		<a href='/user/{{user_id}}/all_letters/' style="color:black;"><p id="d2"> Check My Mail Box</p></a>
+		<img id="letter"src="{{ url_for('static', filename='img/juliet1.png') }}" width=400px height= 246px>
+	</div> 
+	<div id = "line3">
+		<img  id="juliet" src="{{ url_for('static', filename='img/juliet3.png') }}" width=400px height= 246px> 
+		<a href='/user/{{user_id}}/reply_letter/' style="color:black;"><p id="d1"> Reply A Letter As Juliet</p></a>
+	</div> 
+</article>
+{% endblock %}

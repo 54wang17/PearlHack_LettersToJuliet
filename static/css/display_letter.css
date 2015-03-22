@@ -1,0 +1,61 @@
+body{
+	background-image: url("../img/bg_grey.jpg");
+	padding-left: 120px;
+    padding-right: 120px;
+    font-family: 'Tangerine', serif;
+    font-size: 46px;
+    text-shadow: 4px 4px 4px #aaa;
+    padding-top: 20px;
+}
+
+header {
+    font-family: 'Tangerine', serif;
+    text-shadow: 4px 4px 4px #aaa;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 90px;
+    margin: 20px;
+    background-image: url("../img/frame.png");
+    background-position: top;
+    opacity: 0.8;
+}
+
+h1 {
+    font-family: 'Tangerine', serif;
+    text-shadow: 4px 4px 4px #aaa;
+    font-size: 45px;
+	text-align: left;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    margin: 0px;
+}
+
+
+button{
+    width: 100px;
+    height: 80px;
+    display: inline-block;
+    margin-right: 50px;
+    font-family: 'Tangerine', serif;
+    font-size: 35px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+
+footer {
+	font-style:italic;
+	text-align: center;
+    clear: both;
+    font-size: small;
+    }
+
+div#display_letter {
+    background-image: url("../img/letter_bg.jpg");
+    margin: 0 auto;
+    width: 800px;
+    height: 300px;
+   }
+
+

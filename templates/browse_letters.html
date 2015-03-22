@@ -1,0 +1,38 @@
+{% extends "template.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mailbox.css') }}">
+{% endblock %}
+
+{% block content %}
+<div id="bg">
+<!-- Site header -->
+  <header>
+    <h1>Mail Box</h1>
+  </header>
+<!-- Site article -->
+  <nav>
+  	<ul>
+      <li><a href="/user/{{user_id}}/mainpage/"> Back Home</a></li>
+      <li><a href="/user/{{user_id}}/unread_letters/">Unread Letters</a></li>
+      <li><a href="/user/{{user_id}}/all_letters/">All Letters</a></li>
+      <li><a href= "/user/{{user_id}}/new_letter/"> Write Letter</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <table>
+      <tr>
+        <th>Date</th>
+        <th>Story Name</th>		
+      </tr>
+      {% for letter in letters %}  
+        <tr>
+          <td>{{ letter.sent_date }}</td>
+          <td><a href="/letter/{{letter.id}}/">{{ letter.title }}</td>   
+        </tr>
+      {% endfor %}
+    </table>
+  </article>
+</div>
+{% endblock %}

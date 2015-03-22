@@ -1,0 +1,48 @@
+{% extends "template.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/new_letter.css') }}">
+{% endblock %}
+
+{% block content %}
+<!-- Site header -->
+<div id="bg">
+<header>
+<h1>Dear Juliet,</h1>
+</header>
+<!-- Site article -->
+<article>
+  <div id="content">
+  <!-- <p id="letter"><img src="letter_bg.jpg" width="800" height="6"></p> -->
+    <form action='/user/{{uid}}/new_letter/' method="post">
+    {{ form.csrf_token }}
+      {{ form.csrf_token }}
+          <p>
+          {{ form.title(placeholder="Title") }}
+          <span class="error">
+            {% if form.title.errors %}
+              {% for error in form.title.errors %}
+                {{ error }}
+              {% endfor %}
+            {% endif %}
+          </span>
+          </p>
+          <p>
+          {{ form.content(placeholder="Content") }}
+          <span class="error">
+            {% if form.content.errors %}
+              {% for error in form.content.errors %}
+                {{ error }}
+              {% endfor %}
+            {% endif %}
+          </span>
+          </p>
+          <br>
+          <button id="sendbutton" type="submit"><b>SEND</b> </button> 
+          <a href='/user/{{uid}}/mainpage/'><button id="cancelbutton" type="button"><b>CANCEL</b> </button></a>
+    </form>
+    </div>
+</article>
+</div>
+{% endblock %}
+

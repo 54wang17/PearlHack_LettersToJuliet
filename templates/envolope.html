@@ -1,0 +1,22 @@
+{% extends "template.html" %}
+{% block head %}
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/envolope.css') }}">
+{% endblock %}
+
+{% block content %}
+<!-- Site header -->
+<header>
+<h1>Juliet's Letters</h1>
+</header>
+
+<!-- Site article -->
+<article>
+	<p style="text-align:center">{{message}}</p>
+	{% if letter_id %}
+		<p id="envolope"><a href="/user/{{user_id}}/reply_letter/{{letter_id}}"><img src="{{ url_for('static', filename='img/envolope.jpg') }}" width="500" height="346"></a></p>
+    {% else %}
+	<p id="envolope"><a href="/user/{{user_id}}/mainpage"><img src="{{ url_for('static', filename='img/envolope.jpg') }}" width="500" height="346"></a></p>
+	{% endif %}
+</article>
+{% endblock %}
+

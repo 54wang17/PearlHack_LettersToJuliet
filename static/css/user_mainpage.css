@@ -1,0 +1,126 @@
+body{
+	background-image: url("../img/bg_grey.jpg");
+	padding-left: 120px;
+    padding-right: 120px;
+    font-family: 'Tangerine', serif;
+    font-size: 46px;
+    text-shadow: 4px 4px 4px #aaa;
+    padding-top: 20px;
+}
+
+img {
+	opacity: 0.9;
+}
+
+header {
+    font-family: 'Tangerine', serif;
+    font-size: 46px;
+    text-shadow: 4px 4px 4px #aaa;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 90px;
+    margin: 20px;
+    margin-bottom: 40px;
+    background-image: url("../img/frame.png");
+    background-position: top;
+    opacity: 0.8;
+}
+
+
+h1 {
+    font-family: 'Tangerine', serif;
+    text-shadow: 4px 4px 4px #aaa;
+    font-size: 45px;
+	text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0px;
+}
+
+article {
+	display: inline-block;
+    width: 90%; 
+    margin: 0 auto;
+    padding: 1.5%;
+}
+
+#logout{
+  position: absolute;
+  right:150px;
+  top:50px;
+  padding:20px; 
+
+}
+
+div #line1{
+    height: 364px;
+	display: inline-block;
+
+}
+div #line2{
+    height: 364px;
+	display: inline-block;
+
+}
+div #line3{
+    height: 364px;
+    display: inline-block;
+
+}
+/*
+#e1{
+    display: inline-block;
+}
+#d1{
+    display: inline;
+    float: top;
+    text-align: center;
+}*/
+
+/*img { 
+   position: relative; 
+   
+}*/
+
+#juliet{
+    opacity: 0.9;
+}
+#letter{
+    opacity:0.9;
+}
+
+#d1 { 
+    font-family: 'Tangerine', serif;
+    font-size: 30px;
+    text-shadow: 4px 4px 4px #aaa;
+    width: 400px;
+   float: right;
+   display: inline-block; 
+   margin-top: 100px; 
+   text-align: center;
+}
+
+#d2{
+    font-family: 'Tangerine', serif;
+    font-size: 30px;
+    text-shadow: 4px 4px 4px #aaa;
+    width: 400px;
+    float: left;
+    display: inline-block;
+    text-align: center;
+    margin-top: 100px;
+}
+
+footer {
+	font-style:italic;
+	text-align: center;
+    clear: both;
+    font-size: small;
+    }
+
+div {
+    margin: 0 auto;
+    width: 800px;
+   }
+
+

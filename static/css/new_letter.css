@@ -1,0 +1,100 @@
+body{
+	background-image: url("../img/bg_grey.jpg");
+	padding-left: 120px;
+    padding-right: 120px;
+    font-family: 'Tangerine', serif;
+    font-size: 25px;
+    text-shadow: 4px 4px 4px #aaa;
+    padding-top: 20px;
+}
+
+h1 {
+    font-family: 'Tangerine', serif;
+    font-size: 30px;
+    text-shadow: 4px 4px 4px #aaa;
+    text-align: center;
+    padding-bottom: 2px;
+    padding-top: 90px;
+    margin: 10px;
+    background-image: url("./img/frame.png");
+    background-position: top;
+    opacity: 0.8;
+}
+
+form input#title{
+    font-family: 'Tangerine', serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 4px 4px 4px #aad;
+    display: inline-block;
+    background-image:  url("../img/letter_bg.jpg");
+    opacity: 0.1;
+    float: top;
+    height: 50px;
+    width:100%;
+    opacity: 0.6;
+    margin:20px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+
+form input#content{
+    font-family: 'Tangerine', serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 4px 4px 4px #aad;
+    display: inline-block;
+    background-image:  url("../IMG/letter_bg.jpg");
+    opacity: 0.1;
+    float: top;
+    height: 700px;
+    width:100%;
+    opacity: 0.6;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+button{
+    float: right;
+    font-size: 20px;
+    width: 120px;
+    height: 60px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 50px;
+    margin-bottom:40px;
+    background-image: url("../img/envolope.jpg");
+    opacity: 0.6;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    black;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    black;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    black;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    black;
+}
+
+footer {
+	font-style:italic;
+	text-align: center;
+    clear: both;
+    font-size: small;
+    }
+
+div#bg {
+    /*background-image: url("../img/letter_bg.jpg");*/
+    margin: 0 auto;
+    width: 800px;
+   }
+
+
