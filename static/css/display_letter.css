@@ -8,19 +8,6 @@ body{
     padding-top: 20px;
 }
 
-header {
-    font-family: 'Tangerine', serif;
-    text-shadow: 4px 4px 4px #aaa;
-    font-size: 20px;
-    text-align: center;
-    padding-bottom: 10px;
-    padding-top: 90px;
-    margin: 20px;
-    background-image: url("../img/frame.png");
-    background-position: top;
-    opacity: 0.8;
-}
-
 h1 {
     font-family: 'Tangerine', serif;
     text-shadow: 4px 4px 4px #aaa;
