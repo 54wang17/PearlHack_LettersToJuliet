@@ -1,6 +1,6 @@
 import os
 DATABASE = 'LettersToJuliet.db'
-BASE_PATH = '/Users/yiqiwang/PearlHack/LettersToJuliet'
+BASE_PATH = r'/Users/yiqiwang/Documents/UNC/2015_Spring/PearlHack/PearlHack_LettersToJuliet/'
 
 CSRF_ENABLED = True
 SECRET_KEY = 'my_precious'
