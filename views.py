@@ -158,14 +158,14 @@ def reply_letter(user_id, letter_id):
     if request.method == 'GET':
         return render_template('reply_letter.html',letters =letter,user_id = user_id, letter_id=letter_id,form=form)
 
-@app.route('/signup/')
+@app.route('/signup/',methods=['GET','POST'])
 def sign_up():
     error = None
     form = RegisterForm(request.form)
     if request.method == 'POST':
         if form.validate_on_submit():
             new_user = User(
-                form.name.data,
+                form.username.data,
                 form.email.data,
                 form.password.data,
             )

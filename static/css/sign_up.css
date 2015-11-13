@@ -50,7 +50,13 @@ div#back{
 
 form{
     display: inline-block;
-    margin-top: 50px;
-    margin-left: 160px;
+    margin: 50px auto auto;
+    width: 80%;
     text-align: center;
+}
+
+.error{
+    font-size: 10px;
+    width:10%;
+    word-wrap: break-word;
 }
